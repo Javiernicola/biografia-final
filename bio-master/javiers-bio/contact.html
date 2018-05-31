@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javier Millones | Contact</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+  <div class="content group">
+    <header class="group">
+      <div class="wrapper group">
+        <div class="logo">
+          <p>Javier Millones</p>
+        </div>
+        <nav class="group">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+     
+    </header>
+    <div class="wrapper">
+      <div class="row">
+        <section class="contact-floats  container col-8 animated">
+          <h1>Contact</h1>
+
+          <hr>
+          <form action="POST">
+
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" value="">
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" value="">
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="name" rows="8" cols="80"></textarea>
+
+            <button type="button" name="button">Submit</button>
+          </form>
+
+        </section>
+        <aside class="contact-floats  col-2">
+          <h2>Social Media</h2>
+          <ul>
+            <li><a href="https://www.facebook.com/Javier Millones-Volpe" target="_blank"><img class="icon" src="assets/images/facebook-square.svg" alt=""></a></li>
+            <li><a href="https://github.com/Javiernicola" target="_blank"><img class="icon" src="assets/images/github.svg" alt=""></a></li>
+            <li><a href="https://twitter.com/JavierMiVo" target="_blank"><img class="icon" src="assets/images/twitter-square.svg" alt=""></a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <footer><p>JavierMiVo@copyrigth 2018</p></footer>
+ <script type="text/javascript">
+    window.onload = () => {
+      let x = document.querySelectorAll('.container');
+      console.log(x);
+      for (let i = 0; i < x.length ; i++) {
+        x[i].classList.add('animated', 'zoomIn');
+      }
+    }
+  </script>
+</body>
+
+</html>
